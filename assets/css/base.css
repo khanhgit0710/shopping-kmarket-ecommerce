@@ -1,20 +1,38 @@
 :root {
-    --white-color: #fff;
-    --black-color: #000;
-    --text-color: #333;
+  --white-color: #fff;
+  --black-color: #000;
+  --text-color: #333;
 }
 
+/* Reset + setup cơ bản */
 * {
-    box-sizing: inherit;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+/* Cỡ chữ gốc */
 html {
-    font-size: 100%;
+  font-size: 100%; /* tương đương 16px */
 }
 
+/* Toàn layout */
+html, body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+  background-color: var(--white-color);
+}
+
+/* Dàn layout dạng cột */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Chữ trong đoạn văn */
 p {
-    font-size: 1.2px;
+  font-size: 1rem; /* khoảng 16px */
+  line-height: 1.5;
 }
-
-
-

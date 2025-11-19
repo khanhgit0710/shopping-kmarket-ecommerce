@@ -1,0 +1,121 @@
+.container {
+    background-color: rgb(252, 79, 26);
+    padding: 0 50px;         /* ← tạo khoảng cách 2 mép */
+    box-sizing: border-box;  /* tránh vỡ layout */
+}
+
+
+.container-navbar {
+    font-size: 13px;
+    color: #ffff;
+    display: flex;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 25px
+}
+
+.header-nav-list {
+    display: flex;
+}
+
+.header-nav-item,
+.header-nav-item--separate {
+    font-size: 15px;
+    color: #ffff;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 5px 10px;
+}
+
+.header-nav-icon {
+    color: #ffff;
+    font-size: 18px;
+    margin: 3.5px 4px;
+}
+
+.header-nav-item--separate {
+    margin: 5px -2px;
+    padding-right: 5px;
+}
+
+.header-nav-item-right,
+.header-nav-item-right--separate {
+    font-size: 15px;
+    color: #ffff;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 5px 10px;
+}
+
+.header-nav-item-right--separate {
+    margin: 5px -2px;
+    padding-right: 5px;
+}
+
+.navbar-search {
+    display: flex;
+    justify-content: center ;
+    height: 80px;
+
+}
+
+.navbar-logo {
+    /* position: absolute; */
+    width: 200px;
+}
+
+.navbar-logo--item {
+    position: relative;
+    width: 200px;
+    height: 80px;
+    margin: 0 0 0 -20px;
+    right: 50px;
+
+}
+
+.navbar-search-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin: 0 30px;
+}
+
+.navbar-search-item__options {
+    width: 900px;
+    height: 35px;
+    border-radius: 5px;
+    position: relative;
+    right: 60px;
+}
+
+.logo-cart {
+    display: flex;
+    align-items: center;
+}
+
+.logo-cart-item  {
+    font-size: 25px;
+    color: white;
+}
+
+.logo-cart-item:hover {
+    color: aliceblue;
+}
+
+.nav-list-product {
+    width: 30%;
+    border: 0.5px;
+    background-color: blue;
+}
+
+.show-product {
+    width: 30%;
+    border: 0.5px;
+    background-color: blue;
+}

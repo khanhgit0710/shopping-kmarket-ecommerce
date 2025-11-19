@@ -1,44 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Đăng nhập - K-Market</title>
+
+    <!-- Normalize + Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,85.7,100..900;1,85.7,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/base.css" />
     <link rel="stylesheet" href="/assets/css/main.css" />
-    <link rel="stylesheet" href="/assets/css/sign_in.css">
-
+    <link rel="stylesheet" href="/assets/css/sign_in.css" />
 </head>
 
 <body>
     <div class="sign-in">
-        <div class="header__sign-in">
+        <!-- Header -->
+        <header class="header__sign-in">
             <div class="header__sign-in-logo">
-                <img class="header__sign-in-logo--item" src="/assets/img/logo_K-Market.png" alt="K-Market">
+                <img class="header__sign-in-logo--item" src="/assets/img/logo_K-Market.png" alt="K-Market" />
             </div>
             <div class="header__sign-in-help">
-                <a class="header__sign-in-help--item" href="">Bạn cần sự giúp đỡ?</a>
+                <a class="header__sign-in-help--item" href="#">Bạn cần sự giúp đỡ?</a>
             </div>
-        </div>
-        <div class="form__sign-in">
-            <div class="header_title-sign-in">
-                <h1>Đăng Nhập</h1>
-            </div>
-            <form class="form__sign-in--item">
-                <div class="form__sign-in--infor">
-                    <input type="text" placeholder="Số điện thoại/Email">
-                </div>
-                <div class="form__sign-in--infor">
-                    <input type="password" placeholder="Mật khẩu">
-                </div>
-            </form>
-        </div>
-     </div>
-</body>
+        </header>
 
+        <!-- Main Form -->
+        <main class="container__sign-in">
+            <div class="form__sign-in">
+                <h1 class="header_title-sign-in">Đăng Nhập</h1>
+
+                <form action="#" method="post" class="form__sign-in--body">
+                    <div class="form__sign-in--infor">
+                        <input type="email" name="email" id="email" placeholder="Email hoặc Số điện thoại" required />
+                    </div>
+                    <div class="form__sign-in--infor">
+                        <input type="password" name="password" id="password" placeholder="Mật khẩu" required />
+                    </div>
+                    <div class="item-dif">
+
+                        <div class="sign-up__noaccount">
+                            <a href="/html/sign_up.html">Bạn chưa có tài khoản? - Mời đăng ký</a>
+                        </div>
+                        <div class="forgot_password">
+                            <a href="">Quên mật khẩu?</a>
+                        </div>
+
+                    </div>
+                    <div class="item-sign-in--dif">
+                        <a href="https://facebook.com" class="sign-in__social sign-in__social--fb">
+                            <i class="fa-brands fa-facebook"></i> </a>
+                        <a href="https://accounts.google.com" class="sign-in__social sign-in__social--gg">
+                            <i class="fa-brands fa-google"></i> </a>
+                    </div>
+
+                    <div class="form__sign-in--infor">
+                        <button type="submit" class="btn__sign-in">Đăng nhập</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer class="container_footer">
+            <h1 class="footer_title">© 2025 K-Market. All rights reserved.</h1>
+        </footer>
+    </div>
+</body>
 </html>
